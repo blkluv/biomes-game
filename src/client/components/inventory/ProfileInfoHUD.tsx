@@ -14,6 +14,7 @@ export const ProfileInfoHUD: React.FunctionComponent<{}> = React.memo(({}) => {
   const { reactResources, socialManager, userId } = useClientContext();
   const localInventory = reactResources.use("/ecs/c/inventory", userId);
   const userBundle = useCachedUserInfo(socialManager, userId);
+  const blingHudImage = require("/public/hud/bling-hud.png");
 
   if (!localInventory || !userBundle) {
     return <></>;
