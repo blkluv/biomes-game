@@ -38,7 +38,7 @@ export const ProfileInfoHUD: React.FunctionComponent<{}> = React.memo(({}) => {
           <Tooltipped tooltip="Bling">
             <div className="flex items-center gap-0.2 text-med font-semibold">
               <img
-                src={blingIcon.src}
+                src={blingIcon}
                 className="-ml-0.2 h-[2.25vmin] w-[2.25vmin]"
               />
               <span className="amount">
